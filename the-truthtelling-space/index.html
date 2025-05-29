@@ -11,9 +11,73 @@
     <div class="container">
       <h1 class="title has-text-primary">The Truth Telling Space</h1>
       <p class="subtitle">Decolonizing knowledge, one story at a time.</p>
-      <a class="button is-warning is-medium" href="https://the.truthtelling.space">Learn More</a>
     </div>
   </section>
-  <script src="main.js"></script>
+
+  <!-- Auth UI -->
+  <section class="section">
+    <div class="container" id="auth-section">
+      <!-- User Info (hidden when logged out) -->
+      <div id="user-info" class="box" style="display:none;">
+        <p><strong>Signed in as:</strong> <span id="user-email"></span></p>
+        <button class="button is-danger" id="logout-btn">Log Out</button>
+      </div>
+
+      <!-- Auth Forms (hidden when logged in) -->
+      <div id="auth-forms">
+        <div class="tabs is-toggle is-fullwidth">
+          <ul>
+            <li class="is-active" id="tab-login"><a>Login</a></li>
+            <li id="tab-register"><a>Register</a></li>
+          </ul>
+        </div>
+        <div id="login-form">
+          <form>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" id="login-email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input class="input" type="password" id="login-password" required>
+              </div>
+            </div>
+            <div class="field">
+              <button class="button is-primary" id="login-btn" type="submit">Login</button>
+            </div>
+            <div class="field">
+              <button class="button is-light" id="google-login-btn" type="button">Sign in with Google</button>
+              <button class="button is-link is-light" id="anon-login-btn" type="button">Continue Anonymously</button>
+            </div>
+            <p class="help is-danger" id="login-error"></p>
+          </form>
+        </div>
+        <div id="register-form" style="display:none;">
+          <form>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" id="register-email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input class="input" type="password" id="register-password" required>
+              </div>
+            </div>
+            <div class="field">
+              <button class="button is-success" id="register-btn" type="submit">Register</button>
+            </div>
+            <p class="help is-danger" id="register-error"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
