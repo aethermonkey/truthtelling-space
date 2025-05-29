@@ -1,12 +1,41 @@
-# React + Vite
+# The Truth Telling Space
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal static site using Bulma, HTML, and JavaScript.
 
-Currently, two official plugins are available:
+## Project Strategy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is intentionally simple, focusing on fundamental web technologies:
+- **HTML** for structure
+- **JavaScript** for interactivity
+- **Bulma** for modern, responsive CSS styling (via npm)
+- **npm** for dependency management and running a local static server
 
-## Expanding the ESLint configuration
+No frameworks (like React or Vite) are used. This approach ensures maximum transparency, ease of contribution, and minimal build complexity.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Install dependencies:
+   ```zsh
+   npm install
+   ```
+2. Start the server:
+   ```zsh
+   npm start
+   ```
+3. Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Folder Structure
+
+- `index.html` – Main HTML file
+- `main.js` – Main JavaScript file
+- `node_modules/` – Installed dependencies (Bulma, http-server)
+- `package.json` – Project metadata and scripts
+
+## Customization
+
+- Edit `index.html` and `main.js` to build your site.
+- Use Bulma classes for styling: [Bulma Documentation](https://bulma.io/documentation/)
+
+---
+
+*This project was reset to a minimal, framework-free setup for clarity and maintainability.*
